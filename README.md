@@ -1,6 +1,6 @@
 # DemoOfSet
 
-[demo of set] (https://chenc11211.github.io/DemoOfSet/)
+[demo of set](https://chenc11211.github.io/DemoOfSet/)
 
 所有demo的集合在此，方便浏览。
 
