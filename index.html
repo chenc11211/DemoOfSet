@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>应用集</title>
+    <link rel="stylesheet" href="css/base/normalize.css">
+    <link rel="stylesheet" href="css/modules/menuBtn.css">
+    <link rel="stylesheet" href="css/pages/index.css">
+</head>
+<body>
+<svg style="display: none">
+    <symbol viewBox="0 0 512 512" id="flash_icon">
+        <g>
+            <g>
+                <path d="M400.268,175.599c-1.399-3.004-4.412-4.932-7.731-4.932h-101.12l99.797-157.568c1.664-2.628,1.766-5.956,0.265-8.678
+			C389.977,1.69,387.109,0,384.003,0H247.47c-3.234,0-6.187,1.826-7.637,4.719l-128,256c-1.323,2.637-1.178,5.777,0.375,8.294
+			c1.562,2.517,4.301,4.053,7.262,4.053h87.748l-95.616,227.089c-1.63,3.883-0.179,8.388,3.413,10.59
+			c1.382,0.845,2.918,1.254,4.446,1.254c2.449,0,4.864-1.05,6.537-3.029l273.067-324.267
+			C401.206,182.161,401.667,178.611,400.268,175.599z"/>
+            </g>
+        </g>
+    </symbol>
+</svg>
+
+<div id="header">
+    <div id="menu_btn" class="menu_btn">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+    <div class="system_info">
+        <ul>
+            <li class="system_date">
+                <div id="current_hours">16:44</div>
+                <div id="current_date">2017/12/21</div>
+            </li>
+            <li id="battery">
+                <div class="battery_all">
+                    <div class="battery_container">
+                        <div id="battery_current">
+
+                        </div>
+                        <div id="battery_charging">
+                            <svg>
+                                <use xlink:href="#flash_icon"></use>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>
+<!--右侧菜单列表-->
+<div id="menu_left">
+    <div class="list_cover">
+        <div class="user_img"><img src="resource/user.jpg" alt=""></div>
+        <div class="user_name">风雨兼程</div>
+        <div class="list_title">demo列表</div>
+    </div>
+    <div class="list_container">
+        <ul id="menu_list">
+            <li><span class="item_bg"></span><a class="no_decoration" href="#ColorfulCharacters">ColorfulCharacters</a></li>
+            <li><span class="item_bg"></span><a class="no_decoration" href="#NewsPaper">NewsPaper</a></li>
+            <li><span class="item_bg"></span><a class="no_decoration" href="#AnimationLoading">AnimationLoading</a></li>
+            <li><span class="item_bg"></span><a class="no_decoration" href="#JavaScript-Tree">JavaScript-Tree</a></li>
+            <li><span class="item_bg"></span><a class="no_decoration" href="#GluttonousSnake">GluttonousSnake</a></li>
+            <li><span class="item_bg"></span><a class="no_decoration" href="#HugeCanvas">HugeCanvas</a></li>
+            <li><span class="item_bg"></span><a class="no_decoration" href="#MusicPlayer">MusicPlayer</a></li>
+            <li><span class="item_bg"></span><a class="no_decoration" href="#MarkdownParser">MarkdownParser</a></li>
+            <li><span class="item_bg"></span><a class="no_decoration" href="#"></a></li>
+        </ul>
+    </div>
+
+</div>
+<!--桌面[暂时取消]-->
+<div id="desktop">
+    <div class="bg"></div>
+</div>
+<!--主体内容区-->
+<div id="main_content">
+    <iframe src="" id="content_item"></iframe>
+    <div id="cover_loading">
+        <ul id="animate_container">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
+</div>
+<!--悬浮按钮-->
+<div class="float_btn"><a id="get_detail" href="https://github.com/chenc11211" target="_blank" title="查看当前详情"><img src="resource/github_blue.jpg" alt=""></a></div>
+</body>
+<script src="js/lib/cc.js"></script>
+<script src="js/pages/index.js"></script>
+</html>
