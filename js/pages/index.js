@@ -242,6 +242,9 @@ window.onload=function () {
     router.register('MarkdownParser',function () {
         oMainContent.getItem('https://htmlpreview.github.io/?https://github.com/chenc11211/MarkdownParser/blob/master/index.html');
     });
+	router.register('Terminal',function () {
+        oMainContent.getItem('https://chenc11211.github.io/Terminal/dist/');
+    });
 
     router.init();
 
